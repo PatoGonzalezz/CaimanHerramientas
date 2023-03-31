@@ -48,7 +48,7 @@ footer{
     margin-top: 5%;
 }
 
- #contacto{
+#contacto{
     width: 50%;
     margin: auto;
 }
@@ -57,4 +57,14 @@ footer{
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
+}
+
+#logoLogin{
+    width: 20vh;
+}
+
+#textLogo{
+    font-weight: bold;
+    text-align: center;
+
 }

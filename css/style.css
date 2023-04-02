@@ -41,7 +41,7 @@ body{
 }
 
 footer{
-    background-color: aqua;
+    background-color: #00ffff;
     position: absolute;
     bottom:auto;
     width: 100%;
@@ -66,5 +66,24 @@ footer{
 #textLogo{
     font-weight: bold;
     text-align: center;
+}
 
+#login{
+    width: 50%;
+    margin: auto;
+}
+
+.loginS{
+    margin: auto;
+}
+
+#btnSesion{
+    margin-bottom: 5vh;
+}
+#bienvenidoLogin{
+    font-family: sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    
 }

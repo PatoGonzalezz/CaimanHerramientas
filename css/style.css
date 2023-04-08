@@ -87,3 +87,18 @@ footer{
     font-weight: bold;
     
 }
+
+#qsP{
+    margin: 2vh;
+}
+
+.cardS{
+    font-size:x-large;
+}
+
+.cardS2{
+    font-weight:bolder;
+    font-size: xx-large;
+    padding-top: 2%;
+
+}

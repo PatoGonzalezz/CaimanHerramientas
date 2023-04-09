@@ -41,7 +41,7 @@ body{
 }
 
 footer{
-    background-color: #00ffff;
+    background-color: #00ffff; 
     position: absolute;
     bottom:auto;
     width: 100%;
@@ -93,13 +93,13 @@ footer{
 }
 
 .cardS{
-    font-size:x-large;
+    font-size: larger;
 }
 
 .cardS2{
     font-weight:bolder;
     font-size: xx-large;
-    padding-top: 2%;
+    padding-top: 5%;
 
 }
 

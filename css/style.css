@@ -41,14 +41,14 @@ body{
 }
 
 footer{
-    background-color: aqua;
+    background-color: #00ffff; 
     position: absolute;
     bottom:auto;
     width: 100%;
     margin-top: 5%;
 }
 
- #contacto{
+#contacto{
     width: 50%;
     margin: auto;
 }
@@ -57,4 +57,52 @@ footer{
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
+}
+
+#logoLogin{
+    width: 20vh;
+}
+
+#textLogo{
+    font-weight: bold;
+    text-align: center;
+}
+
+#login{
+    width: 50%;
+    margin: auto;
+}
+
+.loginS{
+    margin: auto;
+}
+
+#btnSesion{
+    margin-bottom: 5vh;
+}
+#bienvenidoLogin{
+    font-family: sans-serif;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+#qsP{
+    margin: 2vh;
+}
+
+.cardS{
+    font-size: larger;
+}
+
+.cardS2{
+    font-weight:bolder;
+    font-size: xx-large;
+    padding-top: 5%;
+
+}
+
+.nuestrosValores{
+    padding-top: 8vh;
 }

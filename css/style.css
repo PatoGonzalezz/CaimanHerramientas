@@ -106,3 +106,10 @@ footer{
 .nuestrosValores{
     padding-top: 8vh;
 }
+
+.registro{
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+}

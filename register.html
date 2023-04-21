@@ -104,17 +104,18 @@
     </header>
 
 
-    <h1 id="zona_contacto">ZONA CONTACTO</h1>
+    <h1 id="zona_contacto">CREAR CUENTA</h1>
     <div class="registro">
         <form>
-            <div class="form-group mail">
+            <div class="form-group">
                 <label for="correo">Correo:</label>
                 <input type="text" class="form-control" name="correo" placeholder="correo@ejemplo.com" value="" id="correo">
                 <p id="validaEmail"></p>
             </div>
-            <div class="form-group pass">
+            <div class="form-group">
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" class="form-control" name="contraseña" value="" id="contraseña">
+                <input type="password" class="form-control" name="contraseña" value="" id="password">
+                <p id="validapass"></p>
             </div>
             <br>
             <button type="button" onclick="validar()">Registrarse</button>

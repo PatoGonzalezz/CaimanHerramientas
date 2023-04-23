@@ -106,15 +106,14 @@ footer{
 .nuestrosValores{
     padding-top: 8vh;
 }
+
 .registro{
     align-items: center;
     margin: auto;
     width: 50%;
-    height: 75%;
-    background-color:antiquewhite;
+    height: 100vh;
 }
-#btnRegistro{
-    display: flex;
-    justify-content: center;
-    
+
+#comentario{
+    height: 100px;
 }

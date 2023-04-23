@@ -1,30 +1,37 @@
 function validar(){
-    var nombre, contrasenna, correo, apellido, text;
+    var usu, pass, num, text, at;
+    usu = document.getElementById("correo").value;
+    pass = document.getElementById("password").value;
+    num = pass.replace(/[^0-9]/g,"").length;
+    at = 0;
 
-    nombre = document.getElementById("nombre").value;
-    contrasenna = document.getElementById("contraseña").value;
-    correo = document.getElementById("correo").value;
-    apellido = document.getElementById("apellidos").value;
-
-
-    if(nombre.lenght == 0){
-        text = "El nombre no debe estar vacío";
+    if (usu.length == 0){
+        text = "El area del correo no puede estar vacia";
     }else{
         text = "";
+        for (var i = 0, j = usu.length; i < j; i++){
+            if(usu[i] == "@"){
+                at++;
+            }
+        }
+        if(at == 1){
+            text = "";
+        }else{
+            text = "Ingrese un correo valido"
+        }
     }
-    document.getElementById("validaNombre").innerHTML = text;
-
-    if(apellido.lenght == 0){
-        text = "El nombre no debe estar vacío";
-    }else{
+    document.getElementById("validaEmail").innerHTML = text;
+    if (pass.length >= 4 && pass.length <= 12){
         text = "";
-    }
-    document.getElementById("validaEmail").innerHTML = text; 
-    if (contrasenna.lenght !=8){
-        text = "La contraseña debe tener 8 o más dígitos!";
+        if (num == 0){
+            text = "La contraseña debe de tener al menos un numero";
+        }else{
+            text = "";
+        }
     }else{
-        text="";
+        text = "La contraseña debe de tener un minimo de 4 y maximo de 12 caracteres" + "<br>" + "La contraseña debe de tener al menos un numero";
     }
-    document.getElementById("validaPassword").innerHTML = text
-}
+    document.getElementById("validapass").innerHTML = text;
+} 
+
 

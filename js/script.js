@@ -1,10 +1,17 @@
 function validar(){
-    var usu, pass, num, text, at;
+    var usu, pass, num, text, at, fullname;
     usu = document.getElementById("correo").value;
     pass = document.getElementById("password").value;
     num = pass.replace(/[^0-9]/g,"").length;
     at = 0;
+    nombre = document.getElementById("fullname").value;
 
+    if (nombre.length ==0  ){
+        text = "Ingrese un nombre valido";
+    }else{
+        text = "";
+    }    
+    document.getElementById("validaNombre").innerHTML = text;
     if (usu.length == 0){
         text = "El area del correo no puede estar vacia";
     }else{

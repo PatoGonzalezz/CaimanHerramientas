@@ -144,9 +144,9 @@ footer{
     padding: 3vh;
     border-radius: 3%;
 }
-#btnRegister{
+.btnRegister{
     background-color: transparent;
-    font-weight: semibold;
+    font-weight: bold;
     color: #444;
     font-size: 1rem;
     padding: 1rem 1.5rem;
@@ -156,12 +156,29 @@ footer{
     transition: all 1s ease;
     box-shadow: .5rem .5rem 1rem #ccc,
     -.5rem -.5rem 1rem #fff;
+    text-decoration: none;
 }
-#btnRegister:hover{
+.btnRegister:hover{
     box-shadow: .5rem .5rem 1rem #fff,
     -.5rem -.5rem 1rem #ccc;
 }
-#btnRegister:active{
+.btnRegister:active{
     box-shadow:inset .2rem .2rem 1rem #fff,
     inset -.2rem -.2rem 1rem #ccc;
+}
+
+@keyframes aparece-izquierda {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.paginauelemento {
+    animation: aparece-izquierda ease 1s backwards;
 }
